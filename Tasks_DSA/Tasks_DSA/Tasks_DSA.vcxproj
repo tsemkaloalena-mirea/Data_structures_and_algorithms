@@ -142,6 +142,7 @@
     <ClCompile Include="task_1_1.cpp">
       <UseUnicodeForAssemblerListing Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </UseUnicodeForAssemblerListing>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="task_1_2.cpp" />
     <ClCompile Include="task_2_1.cpp" />
