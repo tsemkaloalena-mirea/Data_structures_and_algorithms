@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 void fill_in(int *list, int n) {
@@ -108,7 +108,7 @@ int main_task_2_1() {
 	int n;
 	cin >> n;
 	if (n < 1 || n > 1000) {
-		cout << "Íåäîïóñòèìûé ðàçìåð ìàññèâà";
+		cout << "ÐÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ñ‹Ð¹ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð°";
 		return 1;
 	}
 	fill_in(massiv, n);
@@ -120,7 +120,7 @@ int main_task_2_1() {
 	//cout << endl;
 	//int index = find_first_comer(massiv, n, 3);
 	//if (index == -1) {
-	//	cout << "Òàêîãî çíà÷åíèÿ â ìàññèâå íåò";
+	//	cout << "Ð¢Ð°ÐºÐ¾Ð³Ð¾ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ Ð½ÐµÑ‚";
 	//	return 1;
 	//}
 	//else {
@@ -130,7 +130,7 @@ int main_task_2_1() {
 	//cout << endl;
 	//int negative_number_index = find_first_negative(massiv, n);
 	//if (negative_number_index == -1) {
-	//	cout << "Îòðèöàòåëüíîãî ÷èñëà â ìàññèâå íåò";
+	//	cout << "ÐžÑ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ð³Ð¾ Ñ‡Ð¸ÑÐ»Ð° Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ Ð½ÐµÑ‚";
 	//	return 1;
 	//}
 	//else {
@@ -140,7 +140,7 @@ int main_task_2_1() {
 	//cout << endl;
 	//int indexes = find_all_comers(massiv, n, 5);
 	//if (indexes == -1) {
-	//	cout << "Òàêîãî çíà÷åíèÿ â ìàññèâå íåò";
+	//	cout << "Ð¢Ð°ÐºÐ¾Ð³Ð¾ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ Ð½ÐµÑ‚";
 	//	return 1;
 	//}
 	
@@ -151,7 +151,7 @@ int main_task_2_1() {
 	//	insert_x(massiv, *&n, number, x);
 	//}
 	//else {
-	//	cout << "Íåäîïóñòèìûé èíäåêñ";
+	//	cout << "ÐÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ñ‹Ð¹ Ð¸Ð½Ð´ÐµÐºÑ";
 	//	return 1;
 	//}
 	//cout << endl;
@@ -164,7 +164,7 @@ int main_task_2_1() {
 	//	delete_index(massiv, *&n, deleted_index);
 	//}
 	//else {
-	//	cout << "Íåäîïóñòèìûé èíäåêñ";
+	//	cout << "ÐÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ñ‹Ð¹ Ð¸Ð½Ð´ÐµÐºÑ";
 	//	return 1;
 	//}
 
