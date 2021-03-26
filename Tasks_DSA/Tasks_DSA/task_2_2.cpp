@@ -1,6 +1,5 @@
 #include <iostream>
 #include <malloc.h>
-
 using namespace std;
 
 void fill_in(int* list) {

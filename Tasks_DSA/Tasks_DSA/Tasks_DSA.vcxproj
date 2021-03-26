@@ -139,7 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="task_1_1.cpp" />
+    <ClCompile Include="task_1_1.cpp">
+      <UseUnicodeForAssemblerListing Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </UseUnicodeForAssemblerListing>
+    </ClCompile>
     <ClCompile Include="task_1_2.cpp" />
     <ClCompile Include="task_2_1.cpp" />
     <ClCompile Include="task_2_2.cpp" />

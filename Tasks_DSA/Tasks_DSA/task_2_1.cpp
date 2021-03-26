@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 void fill_in(int *list, int n) {
