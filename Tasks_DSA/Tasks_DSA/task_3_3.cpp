@@ -24,8 +24,8 @@ void insertion_sort(int* list, int n) {
 	cout << compare + swapping << endl;
 }
 
-//int main_task_3_3() {
-int main() {
+//int main() {
+int main_task_3_3() {
 	setlocale(0, "");
 	const int n = 100000;
 	int a[n];
