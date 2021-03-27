@@ -34,7 +34,7 @@ void print_list(int *list, int n) {
 int main_task_3_1() {
     setlocale(0, "");
     
-    const int n = 100;
+    const int n = 100000;
     int a[n];
 
     //С клавиатуры
