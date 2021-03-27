@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <chrono>
 using namespace std;
 
@@ -19,8 +19,8 @@ void insertion_sort(int* list, int n) {
 			}
 		}
 	}
-	cout << "Кол-во сравнений: " << compare << endl;
-	cout << "Кол-во перемещений: " << swapping << endl;
+	cout << "РљРѕР»-РІРѕ СЃСЂР°РІРЅРµРЅРёР№: " << compare << endl;
+	cout << "РљРѕР»-РІРѕ РїРµСЂРµРјРµС‰РµРЅРёР№: " << swapping << endl;
 	cout << compare + swapping << endl;
 }
 
@@ -30,22 +30,22 @@ int main_task_3_3() {
 	const int n = 100000;
 	int a[n];
 
-	//С клавиатуры
+	//РЎ РєР»Р°РІРёР°С‚СѓСЂС‹
 	//for (int i = 0; i < n; i++) {
 	//    cin >> a[i];
 	//}
 
-	//Рандомно
+	//Р Р°РЅРґРѕРјРЅРѕ
 	//for (int i = 0; i < n; i++) {
 	//    a[i] = rand();
 	//}
 
-	//По убыванию
+	//РџРѕ СѓР±С‹РІР°РЅРёСЋ
 	for (int i = 0; i < n; i++) {
 		a[i] = n - i;
 	}
 
-	//По возрастанию
+	//РџРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ
 	//for (int i = 0; i < n; i++) {
 	//    a[i] = i;
 	//}
@@ -58,7 +58,7 @@ int main_task_3_3() {
 	insertion_sort(a, n);
 
 	cout << endl;
-	cout << "Время выполнения программы: " << chrono::duration_cast<second_t>(clock_t::now() - start).count();
+	cout << "Р’СЂРµРјСЏ РІС‹РїРѕР»РЅРµРЅРёСЏ РїСЂРѕРіСЂР°РјРјС‹: " << chrono::duration_cast<second_t>(clock_t::now() - start).count();
 
 	return 0;
 }

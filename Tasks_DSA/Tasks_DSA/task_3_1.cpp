@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <chrono>
 using namespace std;
 
@@ -17,8 +17,8 @@ void bubble_sort(int* list, int n) {
             }
         }
     }
-    cout << "Кол-во сравнений: " << compare << endl;
-    cout << "Кол-во перемещений: " << swapping << endl;
+    cout << "РљРѕР»-РІРѕ СЃСЂР°РІРЅРµРЅРёР№: " << compare << endl;
+    cout << "РљРѕР»-РІРѕ РїРµСЂРµРјРµС‰РµРЅРёР№: " << swapping << endl;
 }
 
 void print_list(int *list, int n) {
@@ -37,22 +37,22 @@ int main_task_3_1() {
     const int n = 100000;
     int a[n];
 
-    //С клавиатуры
+    //РЎ РєР»Р°РІРёР°С‚СѓСЂС‹
     //for (int i = 0; i < n; i++) {
     //    cin >> a[i];
     //}
 
-    //Рандомно
+    //Р Р°РЅРґРѕРјРЅРѕ
     //for (int i = 0; i < n; i++) {
     //    a[i] = rand();
     //}
 
-    //По убыванию
+    //РџРѕ СѓР±С‹РІР°РЅРёСЋ
     for (int i = 0; i < n; i++) {
         a[i] = n - i;
     }
 
-    //По возрастанию
+    //РџРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ
     //for (int i = 0; i < n; i++) {
     //    a[i] = i;
     //}
