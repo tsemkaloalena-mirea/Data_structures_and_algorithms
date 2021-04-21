@@ -142,6 +142,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="1.cpp" />
+    <ClCompile Include="2.cpp" />
     <ClCompile Include="task_1_1.cpp">
       <UseUnicodeForAssemblerListing Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </UseUnicodeForAssemblerListing>
@@ -154,6 +156,8 @@
     <ClCompile Include="task_3_3.cpp" />
     <ClCompile Include="task_4_1.cpp" />
     <ClCompile Include="task_4_2.cpp" />
+    <ClCompile Include="task_5_1.cpp" />
+    <ClCompile Include="task_5_2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

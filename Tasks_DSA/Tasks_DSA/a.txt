@@ -1,0 +1,5 @@
+doll 300 2 10
+constructor 200 10 15
+machine 400 5 8
+bear 100 1 12
+house 500 5 14
