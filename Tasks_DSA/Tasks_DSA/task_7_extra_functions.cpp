@@ -9,7 +9,6 @@ bool list_is_empty(list* L) {
 Node* find_first_coming_value(list* L, string type, string value) {
 	Node* p = L->first;
 	bool f = true;
-	// поиск идёт с двух сторон сразу
 	while (f) {
 		if (type == "car_model" && p->car_model == value) {
 			return p;
@@ -29,7 +28,6 @@ Node* find_first_coming_value(list* L, string type, string value) {
 Node* find_first_coming_value(list* L, string type, int value) {
 	Node* p = L->first;
 	bool f = true;
-	// поиск идёт с двух сторон сразу
 	while (f) {
 		if (type == "year" && p->year == value) {
 			return p;
@@ -113,14 +111,20 @@ void delete_sold_automobiles(list* L) {
 	Node* p = L->first;
 	bool f = true;
 	while (f) {
-		if (p->date_of_sale != "") {
+		if (p->date_of_sale != " ") {
 			if (p->previous != NULL) {
 				p->previous->next = p->next;
+			}
+			else {
+				L->first = p->next;
 			}
 			if (p->next != NULL) {
 				p->next->previous = p->previous;
 			}
-			//free(p);
+			else {
+				L->last = p->previous;
+				return;
+			}
 		}
 		f = p != L->last;
 		p = p->next;
