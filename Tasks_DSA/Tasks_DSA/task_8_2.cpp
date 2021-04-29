@@ -1,10 +1,9 @@
-﻿#include <iostream>
+#include <iostream>
 #include <queue>
-#include <stack>
-#include <string>
+#include "task_8_2_list.h"
 using namespace std;
 
-void pop(stack <char>* St, queue <char>* Q) {
+void pop(listStack <char>* St, queue <char>* Q) {
 	while (!(*St).empty()) {
 		if ((*St).top() == '(') {
 			(*St).pop();
@@ -32,7 +31,7 @@ string reverse_expression(string expression) {
 }
 
 string infix_to_postfix(string expression) {
-	stack <char> St;
+	listStack <char> St;
 	queue <char> Q;
 	for (int i = 0; i < expression.size(); i++) {
 		if (expression[i] == '(') {
@@ -86,94 +85,11 @@ string infix_to_prefix(string expression) {
 	return expression;
 }
 
-int calculate_postfix(string expression) {
-	stack <int> St;
-	for (int i = 0; i < expression.size(); i++) {
-		if (expression[i] == '+') {
-			int a = St.top();
-			St.pop();
-			a += St.top();
-			St.pop();
-			St.push(a);
-		}
-		else if (expression[i] == '*') {
-			int a = St.top();
-			St.pop();
-			a *= St.top();
-			St.pop();
-			St.push(a);
-		}
-		else if (expression[i] == '/') {
-			int a = St.top();
-			St.pop();
-			a = St.top() / a;
-			St.pop();
-			St.push(a);
-		}
-		else if (expression[i] == '-') {
-			int a = St.top();
-			St.pop();
-			a = St.top() - a;
-			St.pop();
-			St.push(a);
-		}
-		else {
-			int a = static_cast<int>(expression[i]) - '0';
-			St.push(a);
-		}
-	}
-	return St.top();
-}
-
-int calculate_prefix(string expression) {
-	stack <int> St;
-	int a;
-	for (int i = expression.size() - 1; i >= 0; i--) {
-		if (expression[i] == '+') {
-			a = St.top();
-			St.pop();
-			a += St.top();
-			St.pop();
-			St.push(a);
-		}
-		else if (expression[i] == '*') {
-			a = St.top();
-			St.pop();
-			a *= St.top();
-			St.pop();
-			St.push(a);
-		}
-		else if (expression[i] == '/') {
-			a = St.top();
-			St.pop();
-			a /= St.top();
-			St.pop();
-			St.push(a);
-		}
-		else if (expression[i] == '-') {
-			a = St.top();
-			St.pop();
-			a -= St.top();
-			St.pop();
-			St.push(a);
-		}
-		else {
-			St.push(static_cast<int>(expression[i]) - '0');
-		}
-	}
-	return St.top();
-}
-
 int main() {
-	string expression_infix = "(8-5)*2+6+4*(3+5)";
+	string expression_infix = "a+(b-c*k)-d*e-f";
 	cout << "infix notation of expression: " << expression_infix << endl;
-	//string expression_postfix;
 	string expression_prefix;
-	//expression_postfix = infix_to_postfix(expression_infix);
 	expression_prefix = infix_to_prefix(expression_infix);
-	//cout << expression_postfix << endl;
 	cout << "prefix notation of expression: " << expression_prefix << endl;
-	//cout << calculate_postfix(expression_postfix) << endl;
-	cout << "result: " << calculate_prefix(expression_prefix);
 	return 0;
 }
