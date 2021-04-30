@@ -166,6 +166,8 @@
     <ClCompile Include="task_8_2_list.h" />
     <ClCompile Include="task_8_2_massiv.h" />
     <ClCompile Include="task_8_3.cpp" />
+    <ClCompile Include="task_9_1.cpp" />
+    <ClCompile Include="task_9_2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="task_7.h" />
