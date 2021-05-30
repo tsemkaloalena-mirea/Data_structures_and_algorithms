@@ -144,6 +144,8 @@
   <ItemGroup>
     <ClCompile Include="1.cpp" />
     <ClCompile Include="2.cpp" />
+    <ClCompile Include="task_11_1.cpp" />
+    <ClCompile Include="task_11_2.cpp" />
     <ClCompile Include="task_7.cpp" />
     <ClCompile Include="task_1_1.cpp">
       <UseUnicodeForAssemblerListing Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
